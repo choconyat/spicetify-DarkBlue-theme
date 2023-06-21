@@ -16,9 +16,16 @@
 	overflow: unset;
 	font-size: 15px !important;
     letter-spacing: 2px !important;
+    font-weight: bold;
 }
 
+.main-nowPlayingBar-container{
+    background-color: rgb(4, 18, 34);
+}
 
+.main-navBar-mainNav {
+    background-color: rgb(4, 18, 34);
+}
 
 :root {
     --player-bar-height: 100px;
