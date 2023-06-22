@@ -2,22 +2,26 @@
 
 * {
     font-family: Raleway;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0.5px;
 }
 
 /* Song name in player */
 .main-nowPlayingWidget-nowPlaying .main-trackInfo-name {
 	overflow: unset;
-	font-size: 20px !important;
-    letter-spacing: 2px !important;
+	font-size: 20px;
+    letter-spacing: 2px;
 }
 
 /* Artist name in player */
 .main-nowPlayingWidget-nowPlaying .main-trackInfo-artists {
 	overflow: unset;
-	font-size: 15px !important;
-    letter-spacing: 2px !important;
-    font-weight: bold !important;
+	font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.control-button-heart {
+    display:none;
 }
 
 .main-nowPlayingBar-container{
