@@ -1,15 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Adds custom font to everything */
 * {
     font-family: Raleway;
     letter-spacing: 0.5px;
 }
 
+/* Fixes animations not working if Windows settings are set to No Animations */
+@media(prefers-reduced-motion: reduce) {
+    *,:after,:before {
+        -webkit-animation-delay: -1ms;
+        animation-delay: -1ms;
+        -webkit-animation-duration: 1ms;
+        animation-duration: 1ms;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        background-attachment: scroll;
+        scroll-behavior: auto;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+}
+
+/* No fading at the end of animation */
+.main-trackInfo-contentWrapper {
+    padding-inline-end: 25px;
+}
+
 /* Song name in player */
 .main-nowPlayingWidget-nowPlaying .main-trackInfo-name {
 	overflow: unset;
+    position: relative;
 	font-size: 20px;
     letter-spacing: 2px;
+    animation: 5s ease-in-out 0s infinite running SongTextAnim !important;
+}
+
+/* Animation properties */
+@keyframes SongTextAnim {
+    0%   {left:0px;}
+    50%  {left:5px;}
+    100%  {left:0px;}
 }
 
 /* Artist name in player */
@@ -20,14 +53,17 @@
     font-weight: bold;
 }
 
+/* Hide liked button */
 .control-button-heart {
     display:none;
 }
 
+/* Darker shade of blue at the bottom (now playing bar) */
 .main-nowPlayingBar-container{
     background-color: rgb(4, 18, 34);
 }
 
+/* Darker shade of blue at the left (navigation bar) */
 .main-navBar-mainNav {
     background-color: rgb(4, 18, 34);
 }
