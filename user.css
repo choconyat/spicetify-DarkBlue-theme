@@ -31,9 +31,9 @@
 
 /* Song name in player */
 .main-nowPlayingWidget-nowPlaying .main-trackInfo-name {
-	overflow: unset;
+    overflow: unset;
     position: relative;
-	font-size: 20px;
+    font-size: 20px;
     letter-spacing: 2px;
     animation: 5s ease-in-out 0s infinite running SongTextAnim !important;
 }
@@ -47,8 +47,8 @@
 
 /* Artist name in player */
 .main-nowPlayingWidget-nowPlaying .main-trackInfo-artists {
-	overflow: unset;
-	font-size: 15px;
+    overflow: unset;
+    font-size: 15px;
     letter-spacing: 2px;
     font-weight: bold;
 }
